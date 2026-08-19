@@ -3,9 +3,10 @@ default:
   outputs:
     dev:
       type: snowflake
-      account: "WHB86050-SARACUS_PARIS"
-      user: "homa"
-      database: "HOMA_DB"
-      schema: "DBT_MHOFFHUES"
-      warehouse: "HOMA_WH"
-      role: "ACCOUNTADMIN"
+      account: ""
+      user: ""
+      database: "{{ env_var('DBT_TARGET_DB') }}"
+      schema: "{{ env_var('DBT_TARGET_SCHEMA') }}"
+      warehouse: "{{ env_var('DBT_TARGET_WH') }}"
+      role: "{{ env_var('DBT_TARGET_ROLE') }}"
+      threads: 4
