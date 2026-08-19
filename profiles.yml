@@ -1,0 +1,11 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "WHB86050-SARACUS_PARIS"
+      user: "homa"
+      database: "HOMA_DB"
+      schema: "DBT_MHOFFHUES"
+      warehouse: "HOMA_WH"
+      role: "ACCOUNTADMIN"
